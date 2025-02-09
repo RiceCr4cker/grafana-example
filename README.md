@@ -33,5 +33,5 @@ docker compose exec curl curl -u user:user http://server-app/admin      # unauth
 ## Suricata alert:
 
 ```
-drc exec curl curl http://testmynids.org/uid/index.html
+docker compose exec curl curl http://testmynids.org/uid/index.html
 ```
