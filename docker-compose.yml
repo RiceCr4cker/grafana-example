@@ -33,6 +33,7 @@ services:
       GF_ALERTING_MIN_INTERVAL_SECONDS: 5
       GF_ALERTING_MAX_ATTEMPTS: 1
       GF_SMTP_ENABLED: "true"
+      GF_AUTH_DISABLE_CHANGE_PASSWORD: "true"
     ports:
       - 3000:3000
   promtail:
