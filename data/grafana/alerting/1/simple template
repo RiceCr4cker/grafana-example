@@ -1,0 +1,14 @@
+{{ define "simple template" }}
+  Alert: {{ .Status }}
+  
+  {{ range .Alerts }}
+  -------
+    Alert Name: {{ .Labels.alertname }}
+    Severity: {{ .Labels.severity }}
+    Summary: {{ .Annotations.summary }}
+  -------
+  
+    {{ .Annotations.description }}
+  
+  {{ end }}
+{{ end }}
