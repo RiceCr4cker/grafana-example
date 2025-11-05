@@ -59,7 +59,7 @@ services:
     network_mode: host
     volumes:
       - ./data/zeek/logs:/logs
-    command: /bin/bash -c "cd /logs && zeek -i any"
+    command: /bin/bash -c "cd /logs && zeek -C -i br_grafana"
   ####### Suricata #######
   suricata:
     build:
